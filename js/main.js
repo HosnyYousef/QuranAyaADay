@@ -17,7 +17,7 @@ window.onload = function getAya(){
       document.querySelector('h3').innerText = data.data.surah.name
       document.querySelector('h4').innerText = data.data.surah.number
       document.querySelector('h5').innerText = data.data.surah.numberOfAyahs
-      document.querySelector('h6').innerText = data.data.surah.revelationType
+      document.querySelector('#h6').innerText = data.data.surah.revelationType
       document.querySelector('p').innerText = data.data.text
     })
     .catch(err => {
@@ -25,6 +25,12 @@ window.onload = function getAya(){
     });
 }
 
+function search()
+{
+    query = 'hello world';
+    url ='http://www.google.com/search?q=' + query;
+    window.open(url,'_blank');
+}
 
 // quran audio:
 // window.onload = function getAudio(){
