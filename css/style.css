@@ -1,0 +1,109 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     margin-left: 10%;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     font-size: 1.5em; 
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+img{
+     display: block;
+     margin: 0 auto;
+
+     width:70%;
+     height: 10%;
+     border-radius: 50px / 15px;
+   }
+
+html{
+     background-color: black;
+     color: rgb(185, 185, 185);
+}   
+
+/* ======= Other code ======== */
+
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+   }
+   
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+/* On screens that are 992px or less, set the background color to blue */
+
+
+
+
+
+@media screen and (min-width: 992px) {
+  img {
+    width:40%;
+    display: inline-block;
+  }
+  h3 {
+    padding-right: 50%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  img {
+    width:30%;
+    display: inline-block;
+  }
+  h3 {
+    padding-right: 65%;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  img {
+    width:15%;
+    display: inline-block;
+  }
+  h3 {
+    padding-right: 80%;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  img {
+    width:50%;
+    display: inline-block;
+  }
+  h3 {
+    padding-right: 30%;
+  }
+}
